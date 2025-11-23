@@ -1,0 +1,63 @@
+## FIRST LINE/ROW: Info & Status
+# First param ─┌
+[username]
+disabled = true
+
+# Second param
+[hostname]
+disabled = true
+
+# Third param
+[directory]
+style = "bold purple"
+truncation_length = 1
+truncate_to_repo = true
+truncation_symbol = ""
+
+# Before all the version info (python, nodejs, php, etc.)
+[git_status]
+style = "white"
+ahead = "⇡${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+behind = "⇣${count}"
+deleted = "x"
+disabled = true
+
+[git_commit]
+tag_disabled = true
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[cmd_duration]
+disabled = true
+
+[battery]
+disabled = true
+
+[time]
+disabled = true
+
+[character]
+success_symbol = " [╰─λ](bold red)"
+error_symbol = " [×](bold red)"
+
+[status]
+disabled = true 
+
+[git_branch]
+style = "bold dark grey"
+format = "[$symbol$branch(:$remote_branch)]($style) "
+
+[hg_branch]
+symbol = " "
+
+[lua]
+disabled = true
+
+[python]
+format = '[(\($virtualenv\))]($style)'
+
+[rust]
+disabled = true
