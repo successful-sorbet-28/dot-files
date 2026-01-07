@@ -1,0 +1,23 @@
+# Ignore everything
+*
+
+# Allow .config directory
+!.config/
+
+# Allow specific folders
+!.config/fastfetch/
+!.config/fish/
+!.config/htop/
+!.config/kitty/
+!.config/rofi/
+
+# Allow contents of those folders
+!.config/fastfetch/**
+!.config/fish/**
+!.config/htop/**
+!.config/kitty/**
+!.config/rofi/**
+
+# Allow specific file
+!.config/starship.toml
+!.gitignore

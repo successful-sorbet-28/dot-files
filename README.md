@@ -2,7 +2,6 @@
 A collection of my personal dotfiles taken from my .config folder. This setup is installed on an Arch-based Linux system.
 
 ## Toolchain
-
  The following utilities are expected to be installed:
 
 ### Python
@@ -42,5 +41,5 @@ A collection of my personal dotfiles taken from my .config folder. This setup is
 - **kitty**  
 - **yakuake** — drop-down terminal
 
-### Other
+### Window switcher
 - **Rofi**
