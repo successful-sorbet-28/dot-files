@@ -2,11 +2,11 @@
 # VERSION: 3.0
 SETUVAR __done_min_cmd_duration:10000
 SETUVAR __done_notification_urgency_level:low
-SETUVAR __fish_initialized:3800
+SETUVAR __fish_initialized:3400
 SETUVAR __garuda_garuda_update_ignore:true
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
-SETUVAR fish_color_command:blue
+SETUVAR --export fish_color_command:cyan
 SETUVAR fish_color_comment:red
 SETUVAR fish_color_cwd:green
 SETUVAR fish_color_cwd_root:red

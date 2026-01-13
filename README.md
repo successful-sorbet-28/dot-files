@@ -24,7 +24,7 @@ A collection of my personal dotfiles taken from my .config folder. This setup is
 ### Command-line Utilities
 - **mosh** — SSH replacement  
 - **nethogs** — network monitoring  
-- **exa** — modern `ls` alternative  
+- **eza** — modern `ls` alternative  
 - **bat** (batcat) — modern `cat` alternative  
 - **nvtop** — GPU monitoring TUI  
 - **fastfetch** — system info  
@@ -33,6 +33,9 @@ A collection of my personal dotfiles taken from my .config folder. This setup is
 ### Embedded Systems Utilities
 - GCC ARM cross-compiler  
 - STM32 Cube Programmer  
+
+### Font
+ - **NerdFont**
 
 ### Prompt
 - **starship**

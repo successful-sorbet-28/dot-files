@@ -1,12 +1,12 @@
 # Replace ls with exa
-alias ls='exa -al --color=always --group-directories-first --icons' # preferred listing
+alias ls='exa --color=always --group-directories-first --icons' # preferred listing
 alias la='exa -a --color=always --group-directories-first --icons'  # all files and dirs
-alias ll='exa -l --color=always --group-directories-first --icons'  # long format
+alias ll='exa -al --color=always --group-directories-first --icons'  # long format
 alias lt='exa -aT --color=always --group-directories-first --icons' # tree listing
 alias ip='ip -color'
 
 # Replace some more things with better alternatives
-alias cat='bat --style header --style snip --style changes --style header'
+alias cat='batcat --style header --style snip --style changes --style header'
 [ ! -x /usr/bin/yay ] && [ -x /usr/bin/paru ] && alias yay='paru'
 
 # Common use
@@ -42,13 +42,17 @@ alias ga="git add"
 alias gc="git commit --amend --no-edit"
 alias gp="git push"
 alias greset="git stash --include-untracked > /dev/null && git stash clear"
+alias gclean="git fetch -p && git branch -vv | awk '/: gone]/ {print $1}' | xargs -r git branch -D"
 alias gitpkg='pacman -Q | grep -i "\-git" | wc -l' # List amount of -git packages
-alias git-graph="git log \
+alias ggraph="git log \
 	--graph \
 	--abbrev-commit \
 	--decorate \
 	--format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'"
+
+
 alias brightness="xrandr --output eDP --brightness" 
+
 
 # Cleanup orphaned packages
 alias cleanup='sudo pacman -Rns (pacman -Qtdq)'

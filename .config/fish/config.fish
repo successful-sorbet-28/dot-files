@@ -1,6 +1,6 @@
 # Starship prompt
 if status --is-interactive
-   source ("/usr/bin/starship" init fish --print-full-init | psub)
+   source ("/usr/local/bin/starship" init fish --print-full-init | psub)
 end
 
 
@@ -12,8 +12,8 @@ if test -f /usr/share/doc/find-the-command/ftc.fish
 end
 
 # Run fastfetch if session is interactive
-if status --is-interactive && type -q fastfetch
-   fastfetch -l Archcraft2
+if status --is-interactive && type -q fastfetch.exe
+   fastfetch.exe 
 end
 
 pyenv init - | source
