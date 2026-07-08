@@ -7,18 +7,14 @@ alias ip='ip -color'
 
 # Replace some more things with better alternatives
 alias cat='batcat --style header --style snip --style changes --style header'
-[ ! -x /usr/bin/yay ] && [ -x /usr/bin/paru ] && alias yay='paru'
 
 # Common use
 alias grubup="sudo update-grub"
-alias fixpacman="sudo rm /var/lib/pacman/db.lck"
 alias tarnow='tar -acf '
 alias untar='tar -xvf '
 alias wget='wget -c '
-alias rmpkg="sudo pacman -Rdd"
 alias psmem='ps auxf | sort -nr -k 4'
 alias psmem10='ps auxf | sort -nr -k 4 | head -10'
-alias upd='/usr/bin/garuda-update'
 alias .='cd ..'
 alias ..='cd ../..'
 alias ...='cd ../../..'
@@ -32,9 +28,6 @@ alias big="expac -H M '%m\t%n' | sort -h | nl"     # Sort installed packages acc
 
 alias sudo='sudo '
 
-# Get fastest mirrors
-alias update-mirrors="sudo reflector --verbose -l 200 -n 20 -p http --sort rate --save /etc/pacman.d/mirrorlist"
-
 # git aliases
 alias gs="git status --short --branch"
 alias gb="git branch"
@@ -42,26 +35,13 @@ alias ga="git add"
 alias gc="git commit --amend --no-edit"
 alias gp="git push"
 alias greset="git stash --include-untracked > /dev/null && git stash clear"
-alias gclean="git fetch -p && git branch -vv | awk '/: gone]/ {print $1}' | xargs -r git branch -D"
-alias gitpkg='pacman -Q | grep -i "\-git" | wc -l' # List amount of -git packages
 alias ggraph="git log \
 	--graph \
 	--abbrev-commit \
 	--decorate \
 	--format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'"
 
-
 alias brightness="xrandr --output eDP --brightness" 
-
-
-# Cleanup orphaned packages
-alias cleanup='sudo pacman -Rns (pacman -Qtdq)'
-
-# Check for missing files in pacman packages
-alias missing='sudo pacman -Qkq' 
-
-# Get the error messages from journalctl
-alias jctl="journalctl -p 3 -xb"
 
 # Recent installed packages
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
