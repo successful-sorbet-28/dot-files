@@ -28,6 +28,7 @@ A collection of my personal dotfiles taken from my .config folder. This setup is
 - **bat** (batcat) — modern `cat` alternative  
 - **nvtop** — GPU monitoring TUI  
 - **fastfetch** — system info  
+- **fzf** - general-purpose command-line fuzzy finder and an interactive terminal toolkit
 - **direnv** — automatic environment variable loading/unloading  
 
 ### Embedded Systems Utilities
