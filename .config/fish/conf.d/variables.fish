@@ -15,7 +15,7 @@ set -x EZA_COLORS "di=96:fi=37:ex=32:ln=36"
 # override manpage $PAGER variable
 # https://github.com/sharkdp/bat/issues/652
 set -x MANROFFOPT "-c" 
-set -x MANPAGER "sh -c 'col -bx | bat -plman'"
+set -x MANPAGER "sh -c 'col -bx | batcat -plman'"
 
 # Set settings for https://github.com/franciscolourenco/done
 set -U __done_min_cmd_duration 10000
